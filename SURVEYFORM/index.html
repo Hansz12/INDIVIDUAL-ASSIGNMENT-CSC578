@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="form-container">
+    <h1 id="title">Movie Survey Form</h1>
+    <p id="description">We’d love to know your thoughts about movies!</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name" id="name-label" class="form-label">Full Name</label>
+        <input id="name" type="text" required placeholder="Enter your full name" class="form-input" />
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email" id="email-label" class="form-label">Email</label>
+        <input id="email" type="email" required placeholder="Enter your email" class="form-input" />
+      </div>
+
+      <!-- Number -->
+      <div class="form-group">
+        <label for="number" id="number-label" class="form-label">How many movies do you watch per month?</label>
+        <input id="number" type="number" min="0" max="100" required placeholder="E.g., 5" class="form-input" />
+      </div>
+
+      <!-- Dropdown -->
+      <div class="form-group">
+        <label for="dropdown" class="form-label">Favorite Movie Genre</label>
+        <select id="dropdown" class="form-input select-input" required>
+          <option value="">Select genre</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="sci-fi">Sci-Fi</option>
+        </select>
+      </div>
+
+      <!-- Radio -->
+      <div class="form-group section-group">
+        <p class="section-label">Would you recommend your favorite movie to a friend?</p>
+        <label class="option-label">
+          <input type="radio" name="recommend" value="definitely" class="option-input" />
+          Definitely
+        </label>
+        <label class="option-label">
+          <input type="radio" name="recommend" value="maybe" class="option-input" />
+          Maybe
+        </label>
+        <label class="option-label">
+          <input type="radio" name="recommend" value="no" class="option-input" />
+          No
+        </label>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-group section-group">
+        <p class="section-label">Which platforms do you usually use to watch movies? (Check all that apply)</p>
+        <label class="option-label">
+          <input type="checkbox" name="platforms" value="netflix" class="option-input" />
+          Netflix
+        </label>
+        <label class="option-label">
+          <input type="checkbox" name="platforms" value="cinema" class="option-input" />
+          Cinema
+        </label>
+        <label class="option-label">
+          <input type="checkbox" name="platforms" value="youtube" class="option-input" />
+          YouTube
+        </label>
+        <label class="option-label">
+          <input type="checkbox" name="platforms" value="astro" class="option-input" />
+          Astro
+        </label>
+        <label class="option-label">
+          <input type="checkbox" name="platforms" value="torrent" class="option-input" />
+          Torrent/Downloads
+        </label>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label for="comments" class="form-label">Any comments or favorite movie suggestions?</label>
+        <textarea id="comments" rows="4" class="form-textarea" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="form-group">
+        <button id="submit" type="submit" class="submit-btn">
+          Submit
+        </button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
