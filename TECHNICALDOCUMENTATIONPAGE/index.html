@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>Tech Docs Navigation</header>
+    <a class="nav-link" href="#Introduction_to_Web_Development">Introduction to Web Development</a>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Fundamentals">CSS Fundamentals</a>
+    <a class="nav-link" href="#JavaScript_Overview">JavaScript Overview</a>
+    <a class="nav-link" href="#Accessibility_in_Web_Design">Accessibility in Web Design</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_Web_Development">
+      <header>Introduction to Web Development</header>
+      <p>Web development involves building websites and web applications using various technologies.</p>
+      <p>Developers use <code>HTML</code>, <code>CSS</code>, and <code>JavaScript</code> to create interactive experiences.</p>
+      <p>The web consists of client-side and server-side components that communicate through HTTP.</p>
+      <ul>
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+        <li>Full Stack Development</li>
+      </ul>
+      <p>Tools like browsers, IDEs, and version control help streamline the process.</p>
+      <p>Popular languages on the backend include Python, Ruby, and Node.js.</p>
+      <code>console.log('Hello World');</code>
+      <code>function greet() { alert('Hi!'); }</code>
+      <code>const server = require('express')();</code>
+      <p>Understanding the basics is crucial for advanced learning.</p>
+      <p>Web development is continuously evolving with new standards.</p>
+    </section>
+
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML stands for HyperText Markup Language and structures web content.</p>
+      <p>Elements like <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code> define content blocks.</p>
+      <p>Attributes such as <code>href</code> and <code>src</code> specify element properties.</p>
+      <ul>
+        <li>Tags surround content</li>
+        <li>Elements can be nested</li>
+        <li>Use semantic tags for accessibility</li>
+      </ul>
+      <p>Comments in HTML use <code>&lt;!-- comment --&gt;</code> syntax.</p>
+      <p>HTML5 introduced many new elements for multimedia and structure.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <code>&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;</code>
+      <code>&lt;body&gt;&lt;p&gt;Content here&lt;/p&gt;&lt;/body&gt;</code>
+      <p>Browsers parse HTML to render web pages.</p>
+      <p>Learning HTML is the foundation for front-end development.</p>
+    </section>
+
+    <section class="main-section" id="CSS_Fundamentals">
+      <header>CSS Fundamentals</header>
+      <p>CSS stands for Cascading Style Sheets, used to style HTML elements.</p>
+      <p>Selectors target elements; properties define styles like color and layout.</p>
+      <ul>
+        <li>Class selectors use a dot (e.g., <code>.class</code>)</li>
+        <li>ID selectors use a hash (e.g., <code>#id</code>)</li>
+        <li>Element selectors match tag names (e.g., <code>p</code>)</li>
+      </ul>
+      <p>CSS can be inline, internal, or external.</p>
+      <p>Box model defines element dimensions: margin, border, padding, and content.</p>
+      <code>color: blue;</code>
+      <code>margin: 10px;</code>
+      <code>display: flex;</code>
+      <p>Responsive design uses media queries to adapt layouts.</p>
+      <p>CSS Grid and Flexbox provide powerful layout tools.</p>
+      <p>Preprocessors like SASS add features to vanilla CSS.</p>
+    </section>
+
+    <section class="main-section" id="JavaScript_Overview">
+      <header>JavaScript Overview</header>
+      <p>JavaScript is a scripting language that enables interactivity on web pages.</p>
+      <p>It supports variables, functions, events, and DOM manipulation.</p>
+      <ul>
+        <li>Variables declared with <code>let</code>, <code>const</code>, and <code>var</code></li>
+        <li>Functions define reusable code blocks</li>
+        <li>Events trigger code based on user actions</li>
+      </ul>
+      <p>JavaScript runs in the browser or on servers using Node.js.</p>
+      <p>Example of a function:</p>
+      <code>function add(a, b) { return a + b; }</code>
+      <code>document.getElementById('id')</code>
+      <code>console.log('Debugging');</code>
+      <p>Modern JS uses ES6+ features like arrow functions and promises.</p>
+      <p>Frameworks like React, Angular, and Vue extend JS capabilities.</p>
+    </section>
+
+    <section class="main-section" id="Accessibility_in_Web_Design">
+      <header>Accessibility in Web Design</header>
+      <p>Accessibility ensures websites can be used by people with disabilities.</p>
+      <p>Use semantic HTML, proper labels, and keyboard navigability.</p>
+      <ul>
+        <li>Alt attributes for images</li>
+        <li>ARIA roles and landmarks</li>
+        <li>Contrast and font size considerations</li>
+      </ul>
+      <p>Test with screen readers and keyboard-only navigation.</p>
+      <p>Accessibility improves usability for all users.</p>
+      <code>&lt;label for="input-id"&gt;Name&lt;/label&gt;</code>
+      <code>role="navigation"</code>
+      <code>tabindex="0"</code>
+      <p>Follow WCAG guidelines for compliance.</p>
+      <p>Accessible sites often rank better in search engines.</p>
+    </section>
+  </main>
+</body>
+</html>
